@@ -30,7 +30,7 @@ Contact
 
 # about
 
-About me
+Sobre mim
 
 I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
 
