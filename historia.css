@@ -5,7 +5,23 @@ body {
     margin: 0;
     background-color: #454545;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
+
+h1  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafohistoria {
+ size: 32px;
+ margin: 0;
+ padding: 10px;
+ text-align: center;
+}
+
 
 /* Estilo do container do logo */
 .logo-container {
