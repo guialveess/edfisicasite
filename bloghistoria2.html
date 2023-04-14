@@ -10,20 +10,22 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="styles2.css">
 
-        <title>Site de Educação Sexual.</title>
+        <title>Portifolio De História.</title>
     </head>
     <body>
-        =============== HEADER ===============
+        <!-- =============== HEADER =============== -->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo"> H I S T O R I A </a>
 
-                <!-- <div class="nav__menu" id="nav-menu">
+                
+
+                <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">Inicio</a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#about" class="nav__link">Sobre</a>
                         </li>
                         <li class="nav__item">
@@ -34,7 +36,7 @@
                         </li> 
                         <li class="nav__item">
                             <a href="#game" class="nav__link">Jogo</a>
-                        </li>
+                        </li> -->
 
                         <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
                     </ul>
@@ -42,7 +44,7 @@
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-grid-alt'></i>
-                </div> -->
+                </div>
 
                 
             </nav>
@@ -52,11 +54,11 @@
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
                 <div class="home__container container grid">
-                    <img src="assets\img\educação sexual.svg" />
+                    <img src="assets\images\historia.jpg" style="border-radius: 12px;" />
 
                     <div class="home__data">
-                        <h1 class="home__title">Portifolio <br> História</h1>
-                        <p class="home__description">Algumas coisas importantes referente a História.</p>
+                        <h1 class="home__title">Historia <br> </h1>
+                        <p class="home__description">Aqui estão as atividades que realizei em Historia e que são essenciais para o meu portfólio</p>
 
                         <!-- <a href="#" class="button">Começar</a> -->
 
@@ -65,11 +67,50 @@
             </section>
 
             <!--=============== ABOUT ===============-->
-            <section class="about section container" id="about">
-                <div class="about__container grid">
-                    <div class="about__data">
-                        <img src="assets\img\bola nova.svg" />
-                        <h2 class="section__title-center">Joguinho na plataforma Wordwall<br></h2>
-                        <p class="about__description"> A educação sexual aborda temas como o sexo, a gravidez, o aborto, métodos contraceptivos, a importância da camisinha e doenças sexualmente transmissíveis. 
+            <section class="security section container"> 
+                <div class="security__container grid">
+                    <div class="security__data">
+                        <h2 class="section__title-center">Atividade no <br> Wordwall</h2>
+                        <p class="security__description"> Aqui está um joguinho que fizemos em sala de aula na plataforma WordWall. Trabalhamos em trio e elaboramos um pequeno jogo de palavras cruzadas relacionado ao assunto em questão
                         </p>
                     </div>
+                    
+                    <iframe style="max-width:100%" src="https://wordwall.net/pt/embed/5cb90334b9a14cc39e3e6ea5d6596c9a?themeId=1&templateId=11&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+                    
+                </div>
+            </section>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Instituição:</a>
+                    <p class="footer__description">Senac <br> Paulista</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Aluno :</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Guilherme Alves </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <a href="facebook.html" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="twitter.html" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="instagram.html" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; guii a. conteúdo privadoo.</p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
