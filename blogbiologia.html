@@ -1,186 +1,112 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="biologia.css">
+    <title>Portifolio de Biologia</title>
+    <style>
+        model-viewer {
+            width: 50%;
+            height: 50%;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">P R O T E Í N A</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <!-- Outros itens de menu -->
+                </ul>
+                <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <main class="main">
+        <section class="model-3d section" id="model-3d">
+            <div class="model-3d__container container grid">
+                <model-viewer
+                    src="protein_sachet.glb"
+                    camera-controls
+                    auto-rotate
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    ar-status="not-presenting"
+                    style="width: 100%; height: 50vh;"
+                ></model-viewer>
+                <p>O whey protein é uma proteína derivada do soro do leite, rica em aminoácidos essenciais e de fácil digestão. É amplamente utilizado para promover o crescimento muscular, acelerar a recuperação após o exercício e auxiliar na perda de peso. Existem diferentes tipos de whey protein, como concentrado, isolado e hidrolisado, cada um com suas características específicas. É uma escolha popular entre atletas e entusiastas de fitness devido aos seus benefícios para a saúde e apoio ao desempenho físico.</p>
+            </div>
+        </section>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+        <section class="model-3d section" id="model-3d">
+            <div class="model-3d__container container grid">
+                <model-viewer
+                    src="3december2020__meat.glb"
+                    camera-controls
+                    auto-rotate
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    ar-scale="auto"
+                    ar-placement="floor"
+                    ar-status="not-presenting"
+                    style="width: 100%; height: 50vh;"
+                ></model-viewer>
+                <p>A carne é uma fonte rica e tradicional de proteína na dieta humana. Ela é obtida a partir de animais, como bovinos, suínos, aves, peixes e outros, e fornece uma variedade de benefícios nutricionais. </p>
+            </div>
+        </section>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="biologia.css">
+        <!-- Outras seções -->
 
-        <title>Portifolio de Biologia</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo"> B I O L O G I A </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Inicio</a>
-                        </li>
-                        <!-- <li class="nav__item">
-                            <a href="#about" class="nav__link">Sobre</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Tópicos</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#conlusao" class="nav__link">Conclusão</a>
-                        </li> 
-                        <li class="nav__item">
-                            <a href="#game" class="nav__link">Jogo</a>
-                        </li> -->
-
-                        <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-
-                
-            </nav>
-        </header>
-
-        <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <img src="assets\images\biologia.jpg" style="border-radius: 12px;" />
-
-                    <div class="home__data">
-                        <h1 class="home__title">Biologia <br> </h1>
-                        <p class="home__description">Aqui estão as atividades que realizei em Biologia e que são essenciais para o meu portfólio</p>
-
-                        <!-- <a href="#" class="button">Começar</a> -->
-
-                    </div>
-                </div>
-            </section>
-
-            <!--=============== ABOUT ===============-->
-            <section class="about section container" id="about">
-                <div class="about__container grid">
-                    <!-- <div class="about__data">
-                        <img src="assets\img\bola nova.svg" />
-                        <h2 class="section__title-center">Sobre o assunto<br></h2>
-                        <p class="about__description"> A educação sexual aborda temas como o sexo, a gravidez, o aborto, métodos contraceptivos, a importância da camisinha e doenças sexualmente transmissíveis. 
-                        </p>
-                    </div> -->
-
-                </div>
-            </section>
-
-            <!--=============== SECURITY ===============-->
-            <!-- <section class="security section container"> 
-                <div class="security__container grid">
-                    <div class="security__data">
-                        <h2 class="section__title-center">Atividade no <br> Wordwall</h2>
-                        <p class="security__description"> Pois além de proteger contra abuso sexual, a educação sexual na escola ajuda a evitar casos de gravidez precoce e doenças sexualmente transmissíveis. Para isso, é recomendado planejar um aprendizado que tenha conteúdo significativo para os estudantes, com o intuito que eles possam aplicar o que aprenderam.
-                        </p>
-                    </div>
-                    
-                    <iframe style="max-width:100%" src="https://wordwall.net/pt/embed/5cb90334b9a14cc39e3e6ea5d6596c9a?themeId=1&templateId=11&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
-                    
-                </div>
-            </section> -->
-
-
-            <!--=============== APP ===============-->
-            <!-- <section class="app section container" id="conlusao">
-                <div class="app__container grid">
-                    <div class="app__data">
-                        <h2 class="section__title-center">Conclusão<br></h2>
-                        <p class="app__description">Por fim.. o público alvo desse site são principalmente os Adolescentes, essas são exemplos de alguns tópicos estudados pela Educação Sexual, infelizmente o ser humano tende a acreditar que o perigo sempre está ao lado de outras pessoas e que nada irá acontecer com ele mesmo, o que o coloca vulnerável a tais situações, Dessa forma, se torna cada vez mais importante ensinar os adolescentes quanto ao assunto, isso dentro de casa e nas instituições de ensino.</p>
-                        <div class="app__buttons">
-                            <a href="#" class="button button-flex">
-                                <i class='bx bxl-apple button__icon'></i> App Store
-                            </a>
-                            <a href="#" class="button button-flex">
-                                <i class='bx bxl-play-store button__icon' ></i> Google Play
-                            </a>
-                        </div>
-                    </div>
-         
-                    <!- <img src="assets\img\ultima img.svg"/> -->
-                </div>
-            </section>
-
-            <section class="home section" id="game">
-                <div class="home__container container grid">
-                    <img src="assets\img\educação sexual.svg" />
-
-                    <div class="home__data">
-                        <h1 class="home__title">Continua <br> ...</h1>
-                        <!-- <p class="home__description">Divirta-se com o nosso jogo ! </p> -->
-
-                        <!-- <a href="jogo.html" class="buttongame">Começar</a> -->
-
-                    </div>   
-                </div>
-            </section>
-
-            <section class="redessociais" id="sociais">
-
-            </section>
-
-            <!--=============== CONTACT US ===============-->
-            <!-- !- <section class="contact section container" id="contact">
-                <div class="contact__container grid">
-                    <div class="contact__content">
-                        <h2 class="section__title-center">Contact Us From <br> Here</h2>
-                        <p class="contact__description">You can contact us from here, you can write to us, 
-                            call us or visit our service center, we will gladly assist you.</p>
-                    </div>
-                    <ul class="contact__content grid">
-                        <li class="contact__address">Telephone: <span class="contact__information">999 - 888 - 777</span></li>
-                        <li class="contact__address">Email:  <span class="contact__information">delivery@email.com</span></li>
-                        <li class="contact__address">Location: <span class="contact__information">Lima - Peru</span></li>
-                    </ul>
-                    <div class="contact__content">
-                        <a href="#" class="button">Contact Us</a>
-                    </div>
-                </div>
-            </section>
-        </main> -->
-
-        <!--=============== FOOTER ===============-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Instituição:</a>
-                    <p class="footer__description">Senac <br> Paulista</p>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Aluno :</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Guilherme Alves </a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__social">
-                    <a href="facebook.html" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
-                    <a href="twitter.html" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
-                    <a href="instagram.html" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+        <!-- <section class="home section" id="game">
+            <div class="home__container container grid">
+                <img src="assets/images/educação_sexual.jpg" />
+                <div class="home__data">
+                    <h1 class="home__title">Continua ...</h1>
                 </div>
             </div>
+        </section> -->
+        <section class="redessociais" id="sociais">
+            <!-- Conteúdo da seção de redes sociais, se aplicável -->
+        </section>
+    </main>
 
-            <p class="footer__copy">&#169; guii a. conteúdo privadoo.</p>
-        </footer>
-
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-        </a>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Instituição:</a>
+                <p class="footer__description">Senac Paulista<br>2ª<br></p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Grupo:</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Guilherme Alves<br>Bruno<br>Guilherme Araújo<br>Pedro Bezerra</a></li>
+                </ul>
+            </div>
+            <!-- <div class="footer__social">
+                <a href="facebook.html" class="footer__social-link"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="twitter.html" class "footer__social-link"><i class='bx bxl-twitter'></i></a>
+                <a href="instagram.html" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+            </div> -->
+        </div>
+        <p class="footer__copy">&copy; alves. conteúdo privado.</p>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
